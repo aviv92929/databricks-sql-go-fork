@@ -6,9 +6,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/databricks/databricks-sql-go/auth/noop"
-	"github.com/databricks/databricks-sql-go/auth/pat"
-	"github.com/databricks/databricks-sql-go/internal/cli_service"
+	"github.com/aviv92929/databricks-sql-go-fork/auth/noop"
+	"github.com/aviv92929/databricks-sql-go-fork/auth/pat"
+	"github.com/aviv92929/databricks-sql-go-fork/internal/cli_service"
 )
 
 func TestParseConfig(t *testing.T) {

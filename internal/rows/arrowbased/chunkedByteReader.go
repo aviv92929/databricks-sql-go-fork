@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"io"
 
-	dbsqlerr "github.com/databricks/databricks-sql-go/internal/errors"
+	dbsqlerr "github.com/aviv92929/databricks-sql-go-fork/internal/errors"
 	"github.com/pkg/errors"
 )
 

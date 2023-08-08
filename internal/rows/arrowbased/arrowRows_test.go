@@ -12,9 +12,9 @@ import (
 
 	"github.com/apache/arrow/go/v12/arrow"
 	"github.com/apache/arrow/go/v12/arrow/array"
-	"github.com/databricks/databricks-sql-go/internal/cli_service"
-	"github.com/databricks/databricks-sql-go/internal/config"
-	dbsqllog "github.com/databricks/databricks-sql-go/logger"
+	"github.com/aviv92929/databricks-sql-go-fork/internal/cli_service"
+	"github.com/aviv92929/databricks-sql-go-fork/internal/config"
+	dbsqllog "github.com/aviv92929/databricks-sql-go-fork/logger"
 	"github.com/pkg/errors"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

@@ -8,15 +8,15 @@ import (
 	"strings"
 	"time"
 
-	"github.com/databricks/databricks-sql-go/auth"
-	"github.com/databricks/databricks-sql-go/auth/pat"
-	"github.com/databricks/databricks-sql-go/driverctx"
-	dbsqlerr "github.com/databricks/databricks-sql-go/errors"
-	"github.com/databricks/databricks-sql-go/internal/cli_service"
-	"github.com/databricks/databricks-sql-go/internal/client"
-	"github.com/databricks/databricks-sql-go/internal/config"
-	dbsqlerrint "github.com/databricks/databricks-sql-go/internal/errors"
-	"github.com/databricks/databricks-sql-go/logger"
+	"github.com/aviv92929/databricks-sql-go-fork/auth"
+	"github.com/aviv92929/databricks-sql-go-fork/auth/pat"
+	"github.com/aviv92929/databricks-sql-go-fork/driverctx"
+	dbsqlerr "github.com/aviv92929/databricks-sql-go-fork/errors"
+	"github.com/aviv92929/databricks-sql-go-fork/internal/cli_service"
+	"github.com/aviv92929/databricks-sql-go-fork/internal/client"
+	"github.com/aviv92929/databricks-sql-go-fork/internal/config"
+	dbsqlerrint "github.com/aviv92929/databricks-sql-go-fork/internal/errors"
+	"github.com/aviv92929/databricks-sql-go-fork/logger"
 )
 
 type connector struct {

@@ -8,9 +8,9 @@ import (
 	"os"
 	"time"
 
-	_ "github.com/databricks/databricks-sql-go"
-	"github.com/databricks/databricks-sql-go/driverctx"
-	dbsqllog "github.com/databricks/databricks-sql-go/logger"
+	_ "github.com/aviv92929/databricks-sql-go-fork"
+	"github.com/aviv92929/databricks-sql-go-fork/driverctx"
+	dbsqllog "github.com/aviv92929/databricks-sql-go-fork/logger"
 	"github.com/joho/godotenv"
 )
 

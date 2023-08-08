@@ -16,15 +16,15 @@ import (
 	"strconv"
 	"time"
 
-	dbsqlerr "github.com/databricks/databricks-sql-go/errors"
-	dbsqlerrint "github.com/databricks/databricks-sql-go/internal/errors"
+	dbsqlerr "github.com/aviv92929/databricks-sql-go-fork/errors"
+	dbsqlerrint "github.com/aviv92929/databricks-sql-go-fork/internal/errors"
 
 	"github.com/apache/thrift/lib/go/thrift"
-	"github.com/databricks/databricks-sql-go/auth"
-	"github.com/databricks/databricks-sql-go/driverctx"
-	"github.com/databricks/databricks-sql-go/internal/cli_service"
-	"github.com/databricks/databricks-sql-go/internal/config"
-	"github.com/databricks/databricks-sql-go/logger"
+	"github.com/aviv92929/databricks-sql-go-fork/auth"
+	"github.com/aviv92929/databricks-sql-go-fork/driverctx"
+	"github.com/aviv92929/databricks-sql-go-fork/internal/cli_service"
+	"github.com/aviv92929/databricks-sql-go-fork/internal/config"
+	"github.com/aviv92929/databricks-sql-go-fork/logger"
 	"github.com/hashicorp/go-retryablehttp"
 	"github.com/pkg/errors"
 )

@@ -4,7 +4,7 @@ import (
 	"context"
 	"errors"
 
-	"github.com/databricks/databricks-sql-go/internal/cli_service"
+	"github.com/aviv92929/databricks-sql-go-fork/internal/cli_service"
 )
 
 var ErrNotImplemented = errors.New("databricks: not implemented")

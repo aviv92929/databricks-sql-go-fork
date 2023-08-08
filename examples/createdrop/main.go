@@ -8,9 +8,9 @@ import (
 	"strconv"
 	"time"
 
-	dbsql "github.com/databricks/databricks-sql-go"
-	dbsqlctx "github.com/databricks/databricks-sql-go/driverctx"
-	dbsqllog "github.com/databricks/databricks-sql-go/logger"
+	dbsql "github.com/aviv92929/databricks-sql-go-fork"
+	dbsqlctx "github.com/aviv92929/databricks-sql-go-fork/driverctx"
+	dbsqllog "github.com/aviv92929/databricks-sql-go-fork/logger"
 	"github.com/joho/godotenv"
 )
 

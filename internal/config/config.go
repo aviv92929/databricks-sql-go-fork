@@ -10,15 +10,15 @@ import (
 	"strings"
 	"time"
 
-	dbsqlerr "github.com/databricks/databricks-sql-go/errors"
+	dbsqlerr "github.com/aviv92929/databricks-sql-go-fork/errors"
 	"github.com/pkg/errors"
 
-	"github.com/databricks/databricks-sql-go/auth"
-	"github.com/databricks/databricks-sql-go/auth/noop"
-	"github.com/databricks/databricks-sql-go/auth/pat"
-	"github.com/databricks/databricks-sql-go/internal/cli_service"
-	dbsqlerrint "github.com/databricks/databricks-sql-go/internal/errors"
-	"github.com/databricks/databricks-sql-go/logger"
+	"github.com/aviv92929/databricks-sql-go-fork/auth"
+	"github.com/aviv92929/databricks-sql-go-fork/auth/noop"
+	"github.com/aviv92929/databricks-sql-go-fork/auth/pat"
+	"github.com/aviv92929/databricks-sql-go-fork/internal/cli_service"
+	dbsqlerrint "github.com/aviv92929/databricks-sql-go-fork/internal/errors"
+	"github.com/aviv92929/databricks-sql-go-fork/logger"
 )
 
 // Driver Configurations.
