@@ -100,6 +100,22 @@ func NewConnector(options ...connOption) (driver.Connector, error) {
 	return &connector{cfg: cfg, client: client}, nil
 }
 
+func NewConnectorWithConfig(cfg *config.Config, options ...connOption) (driver.Connector, error) {
+	// config with default options
+	if cfg == nil {
+		cfg = config.WithDefaults()
+	}
+	cfg.DriverVersion = DriverVersion
+
+	for _, opt := range options {
+		opt(cfg)
+	}
+
+	client := client.RetryableClient(cfg)
+
+	return &connector{cfg: cfg, client: client}, nil
+}
+
 func withUserConfig(ucfg config.UserConfig) connOption {
 	return func(c *config.Config) {
 		c.UserConfig = ucfg
