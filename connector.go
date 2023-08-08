@@ -2,21 +2,22 @@ package dbsql
 
 import (
 	"context"
+	"crypto/tls"
 	"database/sql/driver"
 	"fmt"
 	"net/http"
 	"strings"
 	"time"
 
-	"github.com/databricks/databricks-sql-go/auth"
-	"github.com/databricks/databricks-sql-go/auth/pat"
-	"github.com/databricks/databricks-sql-go/driverctx"
-	dbsqlerr "github.com/databricks/databricks-sql-go/errors"
-	"github.com/databricks/databricks-sql-go/internal/cli_service"
-	"github.com/databricks/databricks-sql-go/internal/client"
-	"github.com/databricks/databricks-sql-go/internal/config"
-	dbsqlerrint "github.com/databricks/databricks-sql-go/internal/errors"
-	"github.com/databricks/databricks-sql-go/logger"
+	"github.com/aviv92929/databricks-sql-go-fork/auth"
+	"github.com/aviv92929/databricks-sql-go-fork/auth/pat"
+	"github.com/aviv92929/databricks-sql-go-fork/driverctx"
+	dbsqlerr "github.com/aviv92929/databricks-sql-go-fork/errors"
+	"github.com/aviv92929/databricks-sql-go-fork/internal/cli_service"
+	"github.com/aviv92929/databricks-sql-go-fork/internal/client"
+	"github.com/aviv92929/databricks-sql-go-fork/internal/config"
+	dbsqlerrint "github.com/aviv92929/databricks-sql-go-fork/internal/errors"
+	"github.com/aviv92929/databricks-sql-go-fork/logger"
 )
 
 type connector struct {
@@ -100,12 +101,13 @@ func NewConnector(options ...connOption) (driver.Connector, error) {
 	return &connector{cfg: cfg, client: client}, nil
 }
 
-func NewConnectorWithConfig(cfg *config.Config, options ...connOption) (driver.Connector, error) {
+func NewConnectorWithTlsConfig(tlsCfg *tls.Config, options ...connOption) (driver.Connector, error) {
 	// config with default options
-	if cfg == nil {
-		cfg = config.WithDefaults()
-	}
+	cfg := config.WithDefaults()
 	cfg.DriverVersion = DriverVersion
+	if tlsCfg != nil {
+		cfg.TLSConfig = tlsCfg
+	}
 
 	for _, opt := range options {
 		opt(cfg)

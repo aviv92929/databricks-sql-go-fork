@@ -10,12 +10,12 @@ import (
 	"github.com/apache/arrow/go/v12/arrow"
 	"github.com/apache/arrow/go/v12/arrow/array"
 	"github.com/apache/arrow/go/v12/arrow/ipc"
-	dbsqlerr "github.com/databricks/databricks-sql-go/errors"
-	"github.com/databricks/databricks-sql-go/internal/cli_service"
-	"github.com/databricks/databricks-sql-go/internal/config"
-	dbsqlerrint "github.com/databricks/databricks-sql-go/internal/errors"
-	"github.com/databricks/databricks-sql-go/internal/rows/rowscanner"
-	dbsqllog "github.com/databricks/databricks-sql-go/logger"
+	dbsqlerr "github.com/aviv92929/databricks-sql-go-fork/errors"
+	"github.com/aviv92929/databricks-sql-go-fork/internal/cli_service"
+	"github.com/aviv92929/databricks-sql-go-fork/internal/config"
+	dbsqlerrint "github.com/aviv92929/databricks-sql-go-fork/internal/errors"
+	"github.com/aviv92929/databricks-sql-go-fork/internal/rows/rowscanner"
+	dbsqllog "github.com/aviv92929/databricks-sql-go-fork/logger"
 	"github.com/pkg/errors"
 )
 

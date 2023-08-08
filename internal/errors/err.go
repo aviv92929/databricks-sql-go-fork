@@ -6,9 +6,9 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/databricks/databricks-sql-go/driverctx"
-	dbsqlerr "github.com/databricks/databricks-sql-go/errors"
-	"github.com/databricks/databricks-sql-go/internal/cli_service"
+	"github.com/aviv92929/databricks-sql-go-fork/driverctx"
+	dbsqlerr "github.com/aviv92929/databricks-sql-go-fork/errors"
+	"github.com/aviv92929/databricks-sql-go-fork/internal/cli_service"
 	"github.com/pkg/errors"
 )
 

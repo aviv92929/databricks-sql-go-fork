@@ -4,8 +4,8 @@ import (
 	"context"
 	"testing"
 
-	"github.com/databricks/databricks-sql-go/internal/cli_service"
-	"github.com/databricks/databricks-sql-go/internal/rows/rowscanner"
+	"github.com/aviv92929/databricks-sql-go-fork/internal/cli_service"
+	"github.com/aviv92929/databricks-sql-go-fork/internal/rows/rowscanner"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -4,7 +4,7 @@ import (
 	"context"
 	"testing"
 
-	dbsqlerr "github.com/databricks/databricks-sql-go/errors"
+	dbsqlerr "github.com/aviv92929/databricks-sql-go-fork/errors"
 	"github.com/pkg/errors"
 	"github.com/stretchr/testify/assert"
 )
