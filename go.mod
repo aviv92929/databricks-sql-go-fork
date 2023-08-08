@@ -1,4 +1,4 @@
-module github.com/databricks/databricks-sql-go
+module github.com/aviv92929/databricks-sql-go-fork
 
 go 1.19
 
